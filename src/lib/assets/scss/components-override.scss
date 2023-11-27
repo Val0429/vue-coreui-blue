@@ -1,3 +1,14 @@
+/*
+ * File: components-override.scss
+ * File Created: 2023-01-16 12:35:20
+ * Author: Val Liu <valuis0429@gmail.com>
+ * 
+ * -----
+ * Last Modified: 2023-11-27 04:18:34
+ * Modified By: Val Liu
+ * -----
+ */
+
 /// BootstrapVue
 /// button
 #{$theme-name} {
@@ -106,11 +117,11 @@ $card-background: linear-gradient(90deg, rgba(83,120,149,1) 0%, rgba(25,48,82,1)
 /// table
 #{$theme-name} {
     div.dataTables_wrapper {
-        /deep/ .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+        ::v-deep .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
             background-color: #EBFAFD;
         }
 
-        /deep/ .table-hover tbody tr.selected td, .table-hover tbody tr.selected th {
+        ::v-deep .table-hover tbody tr.selected td, .table-hover tbody tr.selected th {
             background-color: #CCF3F9;
         }
     }
